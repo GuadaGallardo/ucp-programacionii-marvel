@@ -8,33 +8,25 @@ using System;
 
 namespace trabajo_practico_3_programacion_ii
 {
-    class Combate
-    {
-        #region Atributos
-        private Superheroe Superheroe;
-        private Villano Villano;
-
-        //private Personaje Ganador;
-
-        private int CantidadUsosSuperpoder;
-
-
+    public class Combate {
+            #region Atributos
+            private Superheroe Superheroe;
+            private Villano Villano;
+            private Personaje Ganador;
+            private int CantidadUsosSuperpoder;
         #endregion
 
         #region Constructor
         public Combate(){
-            this.Superheroe = new Superheroe();
-            this.Villano = new Villano();
+            this.Superheroe = new Superheroe("algo", 19, "algomas", 55);
+            this.Villano = new Villano("villa", 54, "esto", 45);
             this.CantidadUsosSuperpoder = 1;
         }
-        #endregion
-
-        #region Constructor
+               
         public Combate(Superheroe valorSuperheroe, Villano valorVillano, int usosSuperpoder){
             
             this.Superheroe = valorSuperheroe;
             this.Villano = valorVillano;
-            //this.Ganador = valorPersonaje;
             this.CantidadUsosSuperpoder = usosSuperpoder;
             
         }
@@ -79,15 +71,13 @@ namespace trabajo_practico_3_programacion_ii
            
         }
         public void Terminar(){
-
-         
+        
           
         }
         public void Turno(){
-
-           
+          
         }
         #endregion
 
-    }
+        }
 }
