@@ -2,20 +2,21 @@
 
 namespace trabajo_practico_3_programacion_ii
 {
-    class Superheroe
-    {
-        #region Atributos
+    public class Superheroe : Personaje {
+
+        #region atributos
         private int CantidadVidas;
         private Superpoder Superpoder;
         #endregion
 
+
         #region Constructor
-        public Superheroe(){
+        public Superheroe(string nombre, int anioCreacion, string universo, int stamina) : base(nombre, anioCreacion,universo,stamina){
             this.CantidadVidas = 1;
             this.Superpoder = new Superpoder();
         }
 
-        public Superheroe(int vidas, Superpoder superpoder){
+        public Superheroe(string nombre, int anioCreacion, string universo, int stamina, int vidas, Superpoder superpoder) : base(nombre, anioCreacion,universo,stamina){
             this.CantidadVidas = vidas;
             this.Superpoder = superpoder;
         }
@@ -54,7 +55,7 @@ namespace trabajo_practico_3_programacion_ii
         }
 
         public void UsarItem(Item item){
-
+            Console.WriteLine("Estoy usando un item");
 
         }
 
@@ -63,7 +64,6 @@ namespace trabajo_practico_3_programacion_ii
         } 
 
         public void UsarSuperpoder(){
-
 
         }
 
