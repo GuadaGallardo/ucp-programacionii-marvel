@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Marvel_Herencia
+namespace trabajo_practico_3_programacion_ii
 {
     public abstract class Personaje
     {
